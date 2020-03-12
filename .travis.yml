@@ -5,4 +5,4 @@ before_install:
   - docker build -t martinshell/docker-react -f Dockerfile.dev .
 script:
     - script:
-        - docker run -e CI=true martinshell/docker-react npm run test
+        - docker run USERNAME/docker-react npm run test -- --coverage
